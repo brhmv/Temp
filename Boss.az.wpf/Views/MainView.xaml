@@ -1,0 +1,27 @@
+﻿<Window x:Class="Boss.az.wpf.View.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Boss.az.wpf.Views" 
+        xmlns:local1="clr-namespace:Boss.az.wpf.ViewModels" 
+        xmlns:viewmodels="clr-namespace:Boss.az.wpf.ViewModels" d:DataContext="{d:DesignInstance Type=viewmodels:MainViewModel}"
+        xmlns:views="clr-namespace:Boss.az.wpf.Views"
+        mc:Ignorable="d"
+        Title="Boss.az" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <ContentControl Content="{Binding CurrentViewModel}" Name="Content_Control">
+            <!--<ContentControl.Resources>
+                <DataTemplate DataType="{x:Type viewmodels:MainViewModel}">
+                    <views:WorkerOrEmployer/>
+                </DataTemplate>
+
+                --><!--<DataTemplate DataType="{x:Type viewmodels:MainViewModel}">
+                    <views:SignİnUp/>
+                </DataTemplate>--><!--
+            </ContentControl.Resources>-->
+        </ContentControl>
+    </Grid>
+
+</Window>
